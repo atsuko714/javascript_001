@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>JavaScript練習2周目</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <header class="site-width">
+
+
+  </header>
+  <div id="main">
+  <section class="site-width">
+  <h1>Contact</h1>
+    <form>
+      <div class="form-group">
+        <label>名前：*必須<span class="help-block"></span>
+          <!--labelタグでフォームを囲って名前を付けることでフォームにフォーカスされる
+              help-blockが-->
+          <input type="text" name="name" class="valid-text">
+        </label>
+      </div>
+      <div class="form-group">
+        <label>email:*必須<span class="help-block"></span>
+          <input type="text" name="email" class="valid-email">
+        </label>
+      </div>
+      <div class="form-group">
+        <label>電話番号:*必須<span class="help-block"></span>
+          <input type="text" name="phone" class="format-number">
+        </label>
+      </div>
+      <div class="form-group">
+        <label>内容:*必須 <span class="help-block"></span>
+          <textarea name="comment" id="count-text" cols="100" rows="10" class="valid-textarea"></textarea>
+            <div class="counter-container">総文字数<span class="show-count-text">0</span>/100</div>
+            <div class="counter-container">プログラミング<span class="show-count-text2">0</span>個</div>
+        </label>
+      </div>
+      <input type="submit" name="submit" class="btn" value="送信">
+    </form>
+  </section>
+  </div>
+  <footer>
+  <!--  Copyright<a href="http://webukatu.com">ウェブカツ！サンプルホームページ</a>All Rights Reserved.-->
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+  </body>
+</html>
